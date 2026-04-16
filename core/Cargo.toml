@@ -1,0 +1,18 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4.44", features = ["serde"] }
+log = "0.4.29"
+log4rs = "1.4.0"
+regex = "1.12.3"
+reqwest = "0.13.2"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = { version = "1.0.149", features = ["unbounded_depth"] }
+serde_stacker = "0.1.14"
+serde_xml = "0.9.1"
+serde_yaml = "0.9.34"
+thiserror = "2.0.18"
+uuid = { version = "1.23.0", features = ["serde"] }
