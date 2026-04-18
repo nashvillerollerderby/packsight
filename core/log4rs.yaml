@@ -18,18 +18,13 @@ root:
   level: info
   appenders:
     - stdout
-    - server
+#    - server
 
 loggers:
-  # Raise the maximum log level for events sent to the "app::backend::db" logger to "info"
-  app::backend::db:
-    level: info
+# Raise the maximum log level for events sent to the "app::backend::db" logger to "info"
 
-  server::ndi:
-    level: debug
-
-  # Route log events sent to the "app::requests" logger to the "requests" appender,
-  # and *not* the normal appenders installed at the root
+# Route log events sent to the "app::requests" logger to the "requests" appender,
+# and *not* the normal appenders installed at the root
 #  app::requests:
 #    level: info
 #    appenders:

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PackSight</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="viewer.js"></script>
+</head>
+<body>
+<main class="m-3">
+    <h1 class="font-title text-4xl">PackSight (Standalone)</h1>
+
+    <p class="mt-3 mb-3">Welcome to PackSight (Standalone)! PackSight is a free tool to help coaches, players, and
+        officials with analyzing each game after it happens. </p>
+
+    <p class="mt-3 mb-3">The version you are using is the standalone version, which
+        means there is no server backend associated with it. <strong>Any data you load into this webpage never leaves
+            your
+            computer.</strong> The web application version, which has an impressive number of additional features, is
+        currently being built and slated for general availability in Q4 2026!</p>
+
+    <p>To get started, you'll need to download the PackSight CRG conversion script, available <a
+            href="https://github.com/nashvillerollerderby/packsight/releases" class="link">here</a>.</p>
+
+    <div class="mockup-code w-full mt-5 mb-5">
+        <pre data-prefix="$"><code>./packsight-convert &lt;input-file-path&gt; &lt;output-file-path&gt;</code></pre>
+        <pre><code>    # as an example...</code></pre>
+        <pre data-prefix="$"><code>./packsight-convert game1.json game1-packsight.json</code></pre>
+    </div>
+
+    <p>Once you've converted your game file, use the file input below to load it into the webpage.</p>
+    <fieldset class="fieldset">
+        <label for="game-file">Parsed Game File</label>
+        <input id="game-file" type="file" class="file-input"/>
+    </fieldset>
+</main>
+</body>
+</html>
